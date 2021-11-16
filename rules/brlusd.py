@@ -11,8 +11,7 @@ try:
 			COTA = "%.2f" % float(DATA.json()['USDBRL']['bid'])
 			MAXIMUN = "%.2f" % float(DATA.json()['USDBRL']['high'])
 			MINIMUN = "%.2f" % float(DATA.json()['USDBRL']['low'])
-		else:
-			erromsg = f'{DATA.status_code}'
+		
 	except:
 		erromsg= f'{DATA.status_code}'
 
