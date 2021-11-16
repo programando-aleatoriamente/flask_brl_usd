@@ -13,7 +13,7 @@ try:
 			MINIMUN = "%.2f" % float(DATA.json()['USDBRL']['low'])
 		
 	except:
-		erromsg= f'{DATA.status_code}'
+		erromsg= f'{DATA.status_code}\n\n Retorno api:\n{DATA}'
 
 except:
 	erromsg = 'Conexao com o host falhou'
